@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Partnership Manager</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username"/>
+    <input type="password" id="password" placeholder="Password"/>
+    <button onclick="login()">Login</button>
+    <p id="login-error"></p>
+  </div>
+
+  <div id="app-container" class="hidden">
+    <h2>Welcome, <span id="user-role"></span></h2>
+    <div id="partnership-form">
+      <input type="text" id="partner-name" placeholder="New Partnership Name"/>
+      <button onclick="addPartnership()">Add Partnership</button>
+    </div>
+
+    <ul id="partnership-list"></ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
